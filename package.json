@@ -4,17 +4,17 @@
   "description": "",
   "dependencies": {
     "@notionhq/client": "latest",
-    "date-fns": "^2.22.1",
-    "dotenv": "^10.0.0",
-    "octokit": "^1.1.0",
-    "ts-node": "^10.1.0",
-    "typescript": "^4.3.5"
+    "date-fns": "^3.3.1",
+    "dotenv": "^16.4.5",
+    "octokit": "^3.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "issues:create": "node  --loader ts-node/esm src/create_issues.ts",
-    "issues:update": "node  --loader ts-node/esm src/update_issues.ts"
+    "issues:create": "npx tsx src/create_issues.ts",
+    "issues:update": "npx tsx src/update_issues.ts"
   },
   "type": "module",
   "author": "Yusuke Kokubo",
